@@ -1,0 +1,116 @@
+name: 🐛 Bug报告
+description: 报告软件错误，帮助我们改进项目
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你报告这个bug！请详细填写以下信息，这将帮助我们更快地定位和解决问题。
+
+  - type: input
+    id: summary
+    attributes:
+      label: Bug概述
+      description: 用一句话简洁地描述这个bug
+      placeholder: 例如：登录按钮在Chrome浏览器中无法点击
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重现步骤
+      description: 请详细描述如何重现这个问题
+      placeholder: |
+        1. 打开网站首页
+        2. 点击右上角"登录"按钮
+        3. 输入用户名和密码
+        4. 点击"提交"按钮
+        5. 发现按钮没有任何反应
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+      description: 描述你期望应该发生什么
+      placeholder: 例如：点击登录按钮后应该跳转到用户首页
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为
+      description: 描述实际发生了什么
+      placeholder: 例如：点击按钮后没有任何反应，页面没有跳转
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: 操作系统
+      description: 你使用的操作系统
+      options:
+        - Windows 11
+        - Windows 10
+        - macOS Ventura (13.x)
+        - macOS Monterey (12.x)
+        - macOS Big Sur (11.x)
+        - Ubuntu 22.04
+        - Ubuntu 20.04
+        - 其他Linux发行版
+        - 其他
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: 浏览器
+      description: 你使用的浏览器
+      options:
+        - Chrome (最新版本)
+        - Chrome (较旧版本)
+        - Firefox (最新版本)
+        - Firefox (较旧版本)
+        - Safari (最新版本)
+        - Safari (较旧版本)
+        - Edge (最新版本)
+        - Edge (较旧版本)
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 浏览器版本
+      description: 请提供具体的浏览器版本号
+      placeholder: 例如：Chrome 108.0.5359.124
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 补充信息
+      description: 任何其他有助于理解问题的信息
+      placeholder: |
+        - 错误信息截图
+        - 浏览器控制台报错
+        - 其他相关信息
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 确认项目
+      description: 请确认你已经完成以下检查
+      options:
+        - label: 我已经搜索过现有的issues，确认这不是重复报告
+          required: true
+        - label: 我已经阅读了项目的贡献指南
+          required: true
+        - label: 我提供的信息是准确和完整的
+          required: true

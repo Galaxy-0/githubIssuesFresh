@@ -1,0 +1,136 @@
+name: ❓ 提问求助
+description: 询问使用问题或寻求帮助
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎提问！我们很乐意帮助你解决问题。请详细描述你遇到的困难。
+
+  - type: input
+    id: summary
+    attributes:
+      label: 问题概述
+      description: 用一句话概括你的问题
+      placeholder: 例如：不知道如何配置开发环境
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 问题类别
+      description: 你的问题属于哪一类？
+      options:
+        - 安装配置 - 环境搭建、依赖安装
+        - 功能使用 - 如何使用某个功能
+        - 错误解决 - 遇到错误不知道怎么办
+        - 最佳实践 - 想了解推荐的做法
+        - 项目贡献 - 如何参与项目开发
+        - 其他问题
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 详细描述
+      description: 详细描述你遇到的问题和困难
+      placeholder: |
+        例如：
+        - 我想要搭建开发环境，但按照README操作时遇到了困难
+        - 在运行npm install时总是报错
+        - 不知道下一步应该怎么做
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: 已尝试的方法
+      description: 你已经尝试了哪些解决方法？
+      placeholder: |
+        例如：
+        1. 查看了README.md文档
+        2. 搜索了相关的错误信息
+        3. 尝试了重新安装Node.js
+        4. 清除了npm缓存
+      validations:
+        required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望帮助
+      description: 你希望得到什么样的帮助？
+      placeholder: |
+        例如：
+        - 希望有人能指导正确的配置步骤
+        - 想了解这个错误的原因和解决方法
+        - 需要推荐合适的学习资料
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境信息
+      description: 请提供你的环境信息（如果相关）
+      placeholder: |
+        - 操作系统：Windows 11 / macOS 13.0 / Ubuntu 20.04
+        - Node.js版本：v16.18.0
+        - npm版本：8.19.2
+        - 浏览器：Chrome 108
+        - 其他相关软件版本
+      render: markdown
+
+  - type: textarea
+    id: error
+    attributes:
+      label: 错误信息
+      description: 如果有错误信息，请完整粘贴（可选）
+      render: shell
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: 紧急程度
+      description: 这个问题对你的影响程度？
+      options:
+        - 不紧急 - 有时间慢慢解决
+        - 一般 - 希望近期能解决
+        - 比较紧急 - 影响到当前工作
+        - 非常紧急 - 阻塞了重要任务
+
+  - type: dropdown
+    id: level
+    attributes:
+      label: 技术水平
+      description: 你的技术经验水平？（帮助我们提供合适的解答）
+      options:
+        - 完全新手 - 刚开始学习
+        - 初学者 - 有一些基础
+        - 中级 - 有一定经验
+        - 高级 - 经验丰富
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 补充信息
+      description: 任何其他有助于理解问题的信息
+      placeholder: |
+        - 相关截图
+        - 配置文件内容
+        - 你的学习目标
+        - 项目背景
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 确认项目
+      options:
+        - label: 我已经搜索过现有的issues和文档
+          required: true
+        - label: 我已经尝试了一些基本的解决方法
+          required: true
+        - label: 我提供的信息是准确的
+          required: true

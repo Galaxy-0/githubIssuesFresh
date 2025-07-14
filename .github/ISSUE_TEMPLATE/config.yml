@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 讨论和交流
+    url: https://github.com/用户名/项目名/discussions
+    about: 一般性讨论、想法分享和社区交流
+  - name: 📚 查看教程文档
+    url: https://github.com/用户名/项目名/blob/main/README.md
+    about: 查看完整的Issues提交指南和教程
+  - name: 🔍 搜索已有Issues
+    url: https://github.com/用户名/项目名/issues
+    about: 搜索是否已有相似问题，避免重复提交
