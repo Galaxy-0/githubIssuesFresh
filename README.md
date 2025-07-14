@@ -210,9 +210,9 @@ A: 在中文项目中当然可以用中文，国际项目建议尽量用英语�
 ## 💬 获得帮助
 
 **在学习过程中遇到任何问题，欢迎：**
-- 🐛 [提交Bug报告](./issues/new?template=bug_report.yml) - 发现教程问题
-- ✨ [提出改进建议](./issues/new?template=feature_request.yml) - 建议新功能
-- 📖 [报告文档问题](./issues/new?template=documentation.yml) - 文档不清楚  
-- ❓ [提问求助](./issues/new?template=question.yml) - 学习中的疑问
+- 🐛 [提交Bug报告](https://github.com/Galaxy-0/githubIssuesFresh/issues/new?template=bug_report.yml) - 发现教程问题
+- ✨ [提出改进建议](https://github.com/Galaxy-0/githubIssuesFresh/issues/new?template=feature_request.yml) - 建议新功能
+- 📖 [报告文档问题](https://github.com/Galaxy-0/githubIssuesFresh/issues/new?template=documentation.yml) - 文档不清楚  
+- ❓ [提问求助](https://github.com/Galaxy-0/githubIssuesFresh/issues/new?template=question.yml) - 学习中的疑问
 
 **记住**：这个项目就是为了帮助新手！不要害怕提问，我们很乐意帮助你成长。
