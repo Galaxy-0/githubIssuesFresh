@@ -209,10 +209,24 @@ A: 在中文项目中当然可以用中文，国际项目建议尽量用英语�
 
 ## 💬 获得帮助
 
-**在学习过程中遇到任何问题，欢迎：**
+### 🎯 选择合适的交流方式
+
+**📋 使用Issues（具体问题）：**
 - 🐛 [提交Bug报告](https://github.com/Galaxy-0/githubIssuesFresh/issues/new?template=bug_report.yml) - 发现教程问题
 - ✨ [提出改进建议](https://github.com/Galaxy-0/githubIssuesFresh/issues/new?template=feature_request.yml) - 建议新功能
 - 📖 [报告文档问题](https://github.com/Galaxy-0/githubIssuesFresh/issues/new?template=documentation.yml) - 文档不清楚  
-- ❓ [提问求助](https://github.com/Galaxy-0/githubIssuesFresh/issues/new?template=question.yml) - 学习中的疑问
+- ❓ [提问求助](https://github.com/Galaxy-0/githubIssuesFresh/issues/new?template=question.yml) - 技术问题求助
+
+**💬 使用Discussions（开放讨论）：**
+- 🎉 [进入社区讨论](https://github.com/Galaxy-0/githubIssuesFresh/discussions) - 学习交流和经验分享
+
+### 📊 何时使用Issues vs Discussions
+
+| 使用Issues | 使用Discussions |
+|------------|-----------------|
+| 🐛 教程有错误或bug | 💬 "大家第一次提交Issue的感受" |
+| 📖 某个步骤说明不清楚 | 🎉 "我成功贡献了第一个PR！" |
+| ✨ 建议添加新的教程内容 | 📚 "推荐其他学习资源" |
+| ❓ 具体的技术操作问题 | ❓ "开源贡献还有哪些形式？" |
 
 **记住**：这个项目就是为了帮助新手！不要害怕提问，我们很乐意帮助你成长。
